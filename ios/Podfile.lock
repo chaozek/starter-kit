@@ -886,6 +886,12 @@ PODS:
   - React-Mapbuffer (0.73.3):
     - glog
     - React-debug
+  - react-native-geolocation (3.4.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+  - react-native-maps (1.20.1):
+    - React-Core
   - React-nativeconfig (0.73.3)
   - React-NativeModulesApple (0.73.3):
     - glog
@@ -1091,6 +1097,8 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector-modern`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - "react-native-geolocation (from `../node_modules/@react-native-community/geolocation`)"
+  - react-native-maps (from `../node_modules/react-native-maps`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1177,6 +1185,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-geolocation:
+    :path: "../node_modules/@react-native-community/geolocation"
+  react-native-maps:
+    :path: "../node_modules/react-native-maps"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1254,6 +1266,8 @@ SPEC CHECKSUMS:
   React-jsinspector: 6fad0fe14882fb6b1c32e5cc8a4bd3d33a8b6790
   React-logger: cb0dd15ac67b00e7b771ef15203edcb29d4a3f8e
   React-Mapbuffer: d59258be3b0d2280c6ba8964ab6e36ec69211871
+  react-native-geolocation: c15fa78a481451620baff55cfc2e04a52e033dd7
+  react-native-maps: ee1e65647460c3d41e778071be5eda10e3da6225
   React-nativeconfig: 4d3076dc3dc498ec49819e4e4225b55d3507f902
   React-NativeModulesApple: 46f14baf36010b22ffd84fd89d5586e4148edfb3
   React-perflogger: 27ccacf853ba725524ef2b4e444f14e34d0837b0
@@ -1277,8 +1291,8 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   ViroKit: 700d3d4ca086368d06224de1cbbc19781aea2094
   ViroReact: f4980e6b04918c4340637f9cbaae22a6bb7ea440
-  Yoga: f895e8e016f8536f1daf787160476add88926d28
+  Yoga: ff0382b894475dba0b4d2a5fda860bfee5a9afad
 
-PODFILE CHECKSUM: e95c998469f87510bc957640b402f1c83df47047
+PODFILE CHECKSUM: bf8b06c73170ccd817dc243fc8558c6e279febeb
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.16.2

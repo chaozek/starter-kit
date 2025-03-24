@@ -5,7 +5,7 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+platform :ios, '13.4'
 prepare_react_native_project!
 
 # If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
@@ -41,6 +41,9 @@ target 'ViroStarterKit' do
 
   pod 'ViroReact', :path => '../node_modules/@reactvision/react-viro/ios/'
   pod 'ViroKit', :path => '../node_modules/@reactvision/react-viro/ios/dist/ViroRenderer/'
+
+  # Add react-native-maps
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
 
   target 'ViroStarterKitTests' do
     inherit! :complete
